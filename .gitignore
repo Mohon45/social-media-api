@@ -5,7 +5,5 @@ package-lock.json
 
 .env*
 .flaskenv*
-google-services.json
 !.env.project
 !.env.vault
-.vercel
