@@ -2,6 +2,10 @@
 
 A lightweight social media application backend built with Node.js, Express, MongoDB, and Firebase Cloud Messaging.
 
+**Test Credentials**
+Email : mdmohon6145@gmail.com
+password: admin@1
+
 ## Features
 
 - **User Authentication**: JWT-based signup/login
