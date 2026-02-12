@@ -12,7 +12,9 @@ const register = catchAsync(async (req, res) => {
     const session = await mongoose.startSession();
     try {
         await session.startTransaction();
-        const user = await userService.createUser(req.body, session);
+        let updateData = {...req.body}
+        updateData["username"] = req.body.lastName
+        const user = await userService.createUser(updateData, session);
         await session.commitTransaction();
         res.status(httpStatus.CREATED).json(
             httpResponse("success", user, "User registered successfully!"),
